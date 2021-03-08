@@ -1,0 +1,68 @@
+body{
+    margin: 0;
+    padding-top: 20vh;
+    width: 100vw;
+    height:80vh;
+    background-image: url("../picture/login.png");
+    background-size: 100vw 100vh;
+}
+
+.login{
+    min-width: 300px;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.1);
+    height: 60vh;
+    margin-left: 35vw;
+    width: 25vw;
+    text-align: center;
+}
+form{
+    padding-top: 6vh;
+    text-align: center;
+}
+input{
+    margin-top: 20px;
+    display: inline-block;
+    border-bottom: 2px solid rgb(2, 0, 0);
+    text-indent: 5px;
+    background: rgba(0, 0, 0, 0);
+    color: rgb(170, 168, 168);
+    outline: none;
+    border-radius: 5px;
+    border: none;
+}
+img{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+}
+button{
+    outline: none;
+    border-radius: 10px;
+    border: none;
+    margin-top: 80px;
+    background: rgba(121, 102, 69,0.2);
+    width: 80px;
+    color: rgb(223, 223, 223);
+}
+h1{
+    margin: 0px;
+    font-size: 16px;
+    color:rgb(201, 201, 201);
+    margin-bottom: 20px;
+}
+button:hover{
+    background: rgba(207, 185, 147, 0.2);
+}
+
+@media only screen and (max-width:400px){
+    .login{
+        margin-left: 15vw;
+    }
+    body{
+        background-position: -515px;
+        background-size: 300vw 100vh;
+    }
+}
+
+
