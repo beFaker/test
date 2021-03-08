@@ -1,10 +1,13 @@
 body{
+    display: grid;
+    grid-template-columns: 10vw 25vw 10vw;
+    grid-template-rows: 20vh 60vh 20vh;
     margin: 0;
-    padding-top: 20vh;
-    width: 100vw;
-    height:80vh;
+    height:100vh;
     background-image: url("../picture/login.png");
     background-size: 100vw 100vh;
+    text-align: center;
+    justify-content:space-around;
 }
 
 .login{
@@ -12,8 +15,10 @@ body{
     border-radius: 10px;
     background: rgba(0, 0, 0, 0.1);
     height: 60vh;
-    margin-left: 35vw;
-    width: 25vw;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
     text-align: center;
 }
 form{
@@ -55,14 +60,34 @@ button:hover{
     background: rgba(207, 185, 147, 0.2);
 }
 
-@media only screen and (max-width:400px){
+@media only screen and (max-width:500px) and (min-width: 351px){
     .login{
-        margin-left: 15vw;
+        min-width: 250px;
     }
     body{
         background-position: -515px;
         background-size: 300vw 100vh;
-    }
+        grid-template-columns: 1vw 80vw 1vw;
 }
 
+}
 
+@media only screen and (max-width:350px){
+    .login{
+        min-width: 250px;
+    }
+    body{
+        background-position: -515px;
+        background-size: 300vw 100vh;
+        grid-template-columns: 1vw 90vw 1vw;
+}
+
+}
+@media only screen and (max-width:800px) and (min-width:501px){
+    body{
+        background-position: -515px;
+        background-size: 300vw 100vh;
+        grid-template-columns: 5vw 50vw 5vw;
+}
+
+}
