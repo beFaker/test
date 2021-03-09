@@ -1,5 +1,7 @@
 $(function(){
 var password = $("input").eq(1);
+
+//添加密码框的点击事件
 password.on("click",function(){
     if(password.val()=="Password"){
         password.val("");
@@ -11,6 +13,7 @@ password.on("click",function(){
         password.attr("type","text");
     }
 })
+//添加用户名框的点击事件
 $("input").eq(0).on("click",function(){
     if($(this).val()=="Username")
         $(this).val("");
@@ -20,6 +23,10 @@ $("input").eq(0).on("click",function(){
     }
 })
 
+//取消页面的触摸滑动事件
+$("html").off("touchmove",function(event){
+    event.preventDefault();
+})
 
 
 })
