@@ -24,7 +24,7 @@ $("input").eq(0).on("click",function(){
 })
 
 //取消页面的触摸滑动事件
-$("html").off("touchmove",function(event){
+$("html").on("touchmove",function(event){
     event.preventDefault();
 })
 
